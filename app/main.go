@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/SpirosOrfanos/utils/logger"
+	"github.com/SpirosOrfanos/readfromany/utils/logger"
 )
 
 func main() {
