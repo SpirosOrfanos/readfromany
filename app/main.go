@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/SpirosOrfanos/readfromany/utils/logger"
+	logger "github.com/SpirosOrfanos/readfromany/utils"
 )
 
 func main() {
 
-	logger.Info("test")
+	logger.Info("Starting application")
 
 }
