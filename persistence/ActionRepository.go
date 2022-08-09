@@ -14,7 +14,8 @@ type ActionRepository interface {
 }
 
 func (repo ActionRepositoryDb) FindBy(req []string) {
-	sqlGetAccount := "SELECT account_id, customer_id, opening_date, account_type, amount from accounts where account_id = ?"
+	sqlGetAccount := "SELECT action_id, type from actions where actionId = ?"
+	var account Action
 	err := repo.client.Get(&account, sqlGetAccount, req[0])
 	if err != nil {
 		logger.Info("Error while fetching account information: " + err.Error())
